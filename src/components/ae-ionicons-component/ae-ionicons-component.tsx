@@ -1,4 +1,5 @@
 import { Component, Prop } from "@stencil/core";
+import "ionicons";
 
 @Component({
   tag: "ae-ionicons-component",
