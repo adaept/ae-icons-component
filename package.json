@@ -1,7 +1,7 @@
 {
-  "name": "ae-ionicons-component",
+  "name": "ae-icons-component",
   "version": "4.4.6",
-  "description": "adaept Ionic Icons Component",
+  "description": "adaept Icons Component",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
   "types": "dist/types/components.d.ts",
@@ -19,16 +19,16 @@
     "ionicons": "^4.4.6"
   },
   "devDependencies": {
-    "@stencil/core": "~0.14.1-1"
+    "@stencil/core": "~0.14.1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adaept/ae-ionicons.git"
+    "url": "git+https://github.com/adaept/ae-icons-component.git"
   },
   "author": "adaept",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adaept/ae-ionicons"
+    "url": "https://github.com/adaept/ae-icons-component"
   },
-  "homepage": "https://github.com/adaept/ae-ionicons"
+  "homepage": "https://github.com/adaept/ae-icons-component"
 }
