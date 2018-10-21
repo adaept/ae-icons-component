@@ -2,11 +2,11 @@ import { Component, Prop } from "@stencil/core";
 import "ionicons";
 
 @Component({
-  tag: "ae-ionicons-component",
-  styleUrl: "ae-ionicons-component.css",
+  tag: "ae-icons-component",
+  styleUrl: "ae-icons-component.css",
   shadow: true
 })
-export class AeIoniconsComponent {
+export class AeIconsComponent {
   @Prop()
   name: string;
   @Prop()
@@ -29,7 +29,7 @@ export class AeIoniconsComponent {
   }
 
   setMyVars() {
-    console.log("Component ae-ionicons-component setMyVars");
+    console.log("Component ae-icons-component setMyVars");
   }
 
   render() {

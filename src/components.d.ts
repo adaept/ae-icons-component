@@ -12,12 +12,12 @@ import 'ionicons';
 
 export namespace Components {
 
-  interface AeIoniconsComponent {
+  interface AeIconsComponent {
     'color': string;
     'name': string;
     'size': string;
   }
-  interface AeIoniconsComponentAttributes extends StencilHTMLAttributes {
+  interface AeIconsComponentAttributes extends StencilHTMLAttributes {
     'color'?: string;
     'name'?: string;
     'size'?: string;
@@ -26,26 +26,26 @@ export namespace Components {
 
 declare global {
   interface StencilElementInterfaces {
-    'AeIoniconsComponent': Components.AeIoniconsComponent;
+    'AeIconsComponent': Components.AeIconsComponent;
   }
 
   interface StencilIntrinsicElements {
-    'ae-ionicons-component': Components.AeIoniconsComponentAttributes;
+    'ae-icons-component': Components.AeIconsComponentAttributes;
   }
 
 
-  interface HTMLAeIoniconsComponentElement extends Components.AeIoniconsComponent, HTMLStencilElement {}
-  var HTMLAeIoniconsComponentElement: {
-    prototype: HTMLAeIoniconsComponentElement;
-    new (): HTMLAeIoniconsComponentElement;
+  interface HTMLAeIconsComponentElement extends Components.AeIconsComponent, HTMLStencilElement {}
+  var HTMLAeIconsComponentElement: {
+    prototype: HTMLAeIconsComponentElement;
+    new (): HTMLAeIconsComponentElement;
   };
 
   interface HTMLElementTagNameMap {
-    'ae-ionicons-component': HTMLAeIoniconsComponentElement
+    'ae-icons-component': HTMLAeIconsComponentElement
   }
 
   interface ElementTagNameMap {
-    'ae-ionicons-component': HTMLAeIoniconsComponentElement;
+    'ae-icons-component': HTMLAeIconsComponentElement;
   }
 
 

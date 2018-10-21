@@ -19,7 +19,7 @@ Stencil components are just Web Components, so they work in any major framework 
 To build the component using Stencil, clone this repo to a new directory:
 
 ```bash
-git clone https://github.com/adaept/ae-ionicons.git my-component
+git clone https://github.com/adaept/ae-icons-component.git my-component
 cd my-component
 git remote rm origin
 ```
