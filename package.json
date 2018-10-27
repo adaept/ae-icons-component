@@ -1,6 +1,6 @@
 {
   "name": "ae-icons-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "adaept Icons Component",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -19,7 +19,7 @@
     "ionicons": "^4.4.6"
   },
   "devDependencies": {
-    "@stencil/core": "~0.14.1"
+    "@stencil/core": "~0.15.0"
   },
   "repository": {
     "type": "git",
