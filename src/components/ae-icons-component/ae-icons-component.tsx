@@ -22,21 +22,26 @@ export class AeIconsComponent {
    */
   componentWillLoad() {
     //console.log('Component ae-icons-component is about to be rendered');
-    console.log(
-      "name=" + this.name + " size=" + this.size + " color=" + this.color
-    );
-    this.setMyVars;
+    this.outputMyProps();
   }
 
-  setMyVars() {
-    console.log("Component ae-icons-component setMyVars");
+  outputMyProps() {
+    console.log(
+      "Component ae-icons-component outputMyProps " +
+        ("name=" + this.name + " size=" + this.size + " color=" + this.color)
+    );
   }
 
   render() {
-    if ((this.size = "small")) {
-      return <ion-icon name={this.name} size="small" color={this.color} />;
-    } else {
-      return <ion-icon name={this.name} size="large" color={this.color} />;
+    if (this.size === "small") {
+      return [
+        <p> "small" </p>,
+        <ion-icon name={this.name} size={this.size} color={this.color} />
+      ];
+    }
+
+    if (this.size === "large") {
+      return <ion-icon name={this.name} size={this.size} color={this.color} />;
     }
   }
 }
