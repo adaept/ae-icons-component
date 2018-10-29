@@ -22,7 +22,7 @@ export class AeIconsComponent {
    */
   componentWillLoad() {
     //console.log('Component ae-icons-component is about to be rendered');
-    this.outputMyProps();
+    //this.outputMyProps();
   }
 
   outputMyProps() {
