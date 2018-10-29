@@ -33,6 +33,10 @@ export class AeIconsComponent {
   }
 
   render() {
-    return <ion-icon name={this.name} size={this.size} color={this.color} />;
+    if ((this.size = "small")) {
+      return <ion-icon name={this.name} size="small" color={this.color} />;
+    } else {
+      return <ion-icon name={this.name} size="large" color={this.color} />;
+    }
   }
 }
