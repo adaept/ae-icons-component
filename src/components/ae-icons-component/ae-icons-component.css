@@ -9,12 +9,14 @@
 
 * {
   --color: pink;
+  --width: 32px;
+  --height: 32px;
 }
 
 ion-icon {
   color: var(--color);
-  width: 32px !important;
-  height: 32px !important;
+  width: var(--width) !important;
+  height: var(--height) !important;
 }
 
 ion-icon:hover {
