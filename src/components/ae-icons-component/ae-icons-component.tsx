@@ -7,12 +7,11 @@ import "ionicons";
   shadow: true
 })
 export class AeIconsComponent {
-  @Prop()
-  name: string;
-  @Prop()
-  size: string;
-  @Prop()
-  color: string;
+
+
+  @Prop() aesize: string;
+  @Prop() name: string;
+  @Prop() color: string;
 
   /**
    * The component is about to load and has not rendered yet.
@@ -22,26 +21,18 @@ export class AeIconsComponent {
    */
   componentWillLoad() {
     //console.log('Component ae-icons-component is about to be rendered');
-    //this.outputMyProps();
+    //console.log('aesize=' + this.aesize + ' name=' + this.name + ' color=' + this.color)
+    //this.setMyVars();
   }
 
-  outputMyProps() {
-    console.log(
-      "Component ae-icons-component outputMyProps " +
-        ("name=" + this.name + " size=" + this.size + " color=" + this.color)
-    );
+  setMyVars() {
+    //console.log('Component ae-icons-component setMyVars');
   }
 
   render() {
-    if (this.size === "small") {
-      return [
-        <p> "small" </p>,
-        <ion-icon name={this.name} size={this.size} color={this.color} />
-      ];
-    }
-
-    if (this.size === "large") {
-      return <ion-icon name={this.name} size={this.size} color={this.color} />;
-    }
+    return (
+      <ion-icon class={this.aesize} name={this.name} color={this.color}></ion-icon>
+    );
   }
 }
+

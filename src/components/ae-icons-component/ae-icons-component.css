@@ -9,13 +9,33 @@
 
 * {
   --color: pink;
-  --width: 32px;
+  --ae-icon-size: 32px;
 }
 
 ion-icon {
   color: var(--color);
-  width: var(--width) !important;
-  height: var(--width) !important;
+  font-size: var(--ae-icon-size);
+}
+
+
+ion-icon.sixteen {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) / 2);
+}
+
+ion-icon.sixty4 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 2);
+}
+
+ion-icon.ninety6 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 3);
+}
+
+ion-icon.hundred28 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
 }
 
 ion-icon:hover {

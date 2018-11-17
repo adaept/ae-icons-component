@@ -13,14 +13,14 @@ import 'ionicons';
 export namespace Components {
 
   interface AeIconsComponent {
+    'aesize': string;
     'color': string;
     'name': string;
-    'size': string;
   }
   interface AeIconsComponentAttributes extends StencilHTMLAttributes {
+    'aesize'?: string;
     'color'?: string;
     'name'?: string;
-    'size'?: string;
   }
 }
 
