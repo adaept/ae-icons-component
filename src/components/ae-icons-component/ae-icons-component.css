@@ -18,22 +18,87 @@ ion-icon {
 }
 
 
-ion-icon.sixteen {
+ion-icon.ae16 {
   color: var(--color);
   font-size: calc(var(--ae-icon-size) / 2);
 }
 
-ion-icon.sixty4 {
+ion-icon.ae24 {
   color: var(--color);
   font-size: calc(var(--ae-icon-size) * 2);
 }
 
-ion-icon.ninety6 {
+ion-icon.ae40 {
   color: var(--color);
   font-size: calc(var(--ae-icon-size) * 3);
 }
 
-ion-icon.hundred28 {
+ion-icon.ae48 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae56 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae64 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae72 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae80 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae88 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae96 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae104 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae112 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae120 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae128 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae192 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae256 {
+  color: var(--color);
+  font-size: calc(var(--ae-icon-size) * 4);
+}
+
+ion-icon.ae512 {
   color: var(--color);
   font-size: calc(var(--ae-icon-size) * 4);
 }
