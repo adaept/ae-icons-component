@@ -5,3 +5,7 @@
   align-items: center;
   justify-items: center;
   }
+
+  ion-icon:hover {
+    cursor: pointer;
+}
