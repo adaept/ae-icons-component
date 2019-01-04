@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "name": "ae-icons-component",
+  "build": {
+    "env": {
+      "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD": "true"
+    }
+  },
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "www",
+        "useBuildUtils": "@now/build-utils@canary"
+      }
+    }
+  ]
+}
