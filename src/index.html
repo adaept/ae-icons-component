@@ -17,11 +17,20 @@
 
   <!-- ae Styles -->
   <link rel="stylesheet" href="assets/aestyles.css">
+  <style>
+    div.aeicons-scroll {
+      background-color: lightyellow;
+      width: 600px;
+      height: 800px;
+      overflow: scroll;
+    }
+  </style>
   <!-- Ionic Core -->
   <script src="https://unpkg.com/@ionic/core@4.0.0-rc.1/dist/ionic.js"></script>
 </head>
 
 <body bgcolor="ivory">
+
   <div>
     <ion-row>
       <br />
@@ -30,17 +39,16 @@
       </a>
       <div>4.5.1/0.16.2/0.0.7</div>
     </ion-row>
+    <!-- container is css grid and is using ion-icon with ionic theme -->
+    <div class="container">
+      <ion-icon name="remove-circle" color="danger" size="large" (click)="decrement()"></ion-icon>
+      <p style="font-size:24px"><b>SIZE</b></p>
+      <ion-icon name="add-circle" color="success" size="large" (click)="increment()"></ion-icon>
+    </div>
     <hr>
   </div>
 
-  <!-- container is css grid and is using ion-icon with ionic theme -->
-  <div class="container">
-    <ion-icon name="remove-circle" color="danger" size="large" (click)="decrement()"></ion-icon>
-    <p style="font-size:24px"><b>SIZE</b></p>
-    <ion-icon name="add-circle" color="success" size="large" (click)="increment()"></ion-icon>
-  </div>
-
-  <div>
+  <div class="aeicons-scroll">
     <div style="background-color:lightyellow">
       <h1>Ionicons - theme and named colors</h1>
       <h2>ae-icons-component</h2>
