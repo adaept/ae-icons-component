@@ -6,7 +6,7 @@ This is a [Stencil Component](https://stenciljs.com/) for displaying Ionic Icons
 
 It is built using the [Stencil Component Starter](https://github.com/ionic-team/stencil-component-starter)
 
-![]https://github.com/adaept/ae-icons-component/blob/master/src/assets/aeicons.gif
+![](https://github.com/adaept/ae-icons-component/blob/master/src/assets/aeicons.gif)
 
 # Stencil
 
