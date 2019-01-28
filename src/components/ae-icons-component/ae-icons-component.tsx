@@ -1,4 +1,4 @@
-import { Component, Prop } from "@stencil/core";
+import { Component, Element, Prop } from "@stencil/core";
 import "ionicons";
 
 @Component({
@@ -8,7 +8,9 @@ import "ionicons";
 })
 export class AeIconsComponent {
 
+  @Element() el: HTMLElement;
 
+  @Prop() aetype: string
   @Prop() aesize: string;
   @Prop() name: string;
   @Prop() color: string;
@@ -22,6 +24,8 @@ export class AeIconsComponent {
   componentWillLoad() {
     //console.log('Component ae-icons-component is about to be rendered');
     //console.log('aesize=' + this.aesize + ' name=' + this.name + ' color=' + this.color)
+    //console.log(this.el.shadowRoot);
+    console.log('aetype=' + this.aetype);
   }
 
   render() {

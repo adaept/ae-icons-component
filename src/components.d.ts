@@ -14,11 +14,13 @@ export namespace Components {
 
   interface AeIconsComponent {
     'aesize': string;
+    'aetype': string;
     'color': string;
     'name': string;
   }
   interface AeIconsComponentAttributes extends StencilHTMLAttributes {
     'aesize'?: string;
+    'aetype'?: string;
     'color'?: string;
     'name'?: string;
   }
