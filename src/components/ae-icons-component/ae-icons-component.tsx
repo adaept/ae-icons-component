@@ -22,11 +22,6 @@ export class AeIconsComponent {
   componentWillLoad() {
     //console.log('Component ae-icons-component is about to be rendered');
     //console.log('aesize=' + this.aesize + ' name=' + this.name + ' color=' + this.color)
-    //this.setMyVars();
-  }
-
-  setMyVars() {
-    //console.log('Component ae-icons-component setMyVars');
   }
 
   render() {
