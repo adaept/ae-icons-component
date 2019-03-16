@@ -1,6 +1,6 @@
 {
   "name": "ae-icons-component",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "adaept Icons Component",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -21,11 +21,11 @@
   },
   "devDependencies": {
     "@stencil/core": "0.18.1",
-    "@types/jest": "24.0.9",
-    "@types/puppeteer": "1.12.1",
-    "jest": "24.1.0",
-    "jest-cli": "24.1.0",
-    "puppeteer": "1.12.2"
+    "@types/jest": "24.0.11",
+    "@types/puppeteer": "1.12.3",
+    "jest": "24.5.0",
+    "jest-cli": "24.5.0",
+    "puppeteer": "1.13.0"
   },
   "repository": {
     "type": "git",
