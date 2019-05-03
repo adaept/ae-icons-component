@@ -22,10 +22,10 @@
   "devDependencies": {
     "@stencil/core": "0.18.1",
     "@types/jest": "24.0.11",
-    "@types/puppeteer": "1.12.3",
+    "@types/puppeteer": "1.12.4",
     "jest": "24.7.1",
     "jest-cli": "24.7.1",
-    "puppeteer": "1.13.0"
+    "puppeteer": "1.15.0"
   },
   "repository": {
     "type": "git",
