@@ -5,34 +5,23 @@
  */
 
 
-import '@stencil/core';
-
-import 'ionicons';
+import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-
   interface AeIconsComponent {
     'aesize': string;
     'aetype': string;
     'color': string;
     'name': string;
   }
-  interface AeIconsComponentAttributes extends StencilHTMLAttributes {
-    'aesize'?: string;
-    'aetype'?: string;
-    'color'?: string;
-    'name'?: string;
-  }
 }
 
 declare global {
-  interface StencilElementInterfaces {
-    'AeIconsComponent': Components.AeIconsComponent;
-  }
 
-  interface StencilIntrinsicElements {
-    'ae-icons-component': Components.AeIconsComponentAttributes;
+  // Adding a global JSX for backcompatibility with legacy dependencies
+  export namespace JSX {
+    export interface Element {}
   }
 
 
@@ -41,22 +30,31 @@ declare global {
     prototype: HTMLAeIconsComponentElement;
     new (): HTMLAeIconsComponentElement;
   };
-
   interface HTMLElementTagNameMap {
-    'ae-icons-component': HTMLAeIconsComponentElement
-  }
-
-  interface ElementTagNameMap {
     'ae-icons-component': HTMLAeIconsComponentElement;
   }
-
-
-  export namespace JSX {
-    export interface Element {}
-    export interface IntrinsicElements extends StencilIntrinsicElements {
-      [tagName: string]: any;
-    }
-  }
-  export interface HTMLAttributes extends StencilHTMLAttributes {}
-
 }
+
+declare namespace LocalJSX {
+  interface AeIconsComponent extends JSXBase.HTMLAttributes<HTMLAeIconsComponentElement> {
+    'aesize'?: string;
+    'aetype'?: string;
+    'color'?: string;
+    'name'?: string;
+  }
+
+  interface IntrinsicElements {
+    'ae-icons-component': AeIconsComponent;
+  }
+}
+
+export { LocalJSX as JSX };
+
+
+declare module "@stencil/core" {
+  export namespace JSX {
+    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
+  }
+}
+
+
