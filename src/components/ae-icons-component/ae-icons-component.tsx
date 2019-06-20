@@ -38,6 +38,8 @@ export class AeIconsComponent {
     console.log(this.arialabel);
     if (this.arialabel) {
       document.getElementById("containerPara").innerHTML = this.arialabel
+    } else {
+      document.getElementById("containerPara").innerHTML = "<br>"
     }
   }
 
