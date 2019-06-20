@@ -14,6 +14,7 @@ export class AeIconsComponent {
   @Prop() aesize: string;
   @Prop() name: string;
   @Prop() color: string;
+  @Prop() arialabel: string;
 
   constructor() {
     this.iconClicked = this.iconClicked.bind(this);
@@ -34,6 +35,9 @@ export class AeIconsComponent {
 
   iconClicked(evt) {
     console.log(evt.currentTarget);
+    console.log(this.arialabel)
+    //    let x = document.getElementById("container").className;
+    //    document.getElementById("containerPara").innerHTML = x;
   }
 
   render() {

@@ -12,6 +12,7 @@ export namespace Components {
   interface AeIconsComponent {
     'aesize': string;
     'aetype': string;
+    'arialabel': string;
     'color': string;
     'name': string;
   }
@@ -39,6 +40,7 @@ declare namespace LocalJSX {
   interface AeIconsComponent extends JSXBase.HTMLAttributes<HTMLAeIconsComponentElement> {
     'aesize'?: string;
     'aetype'?: string;
+    'arialabel'?: string;
     'color'?: string;
     'name'?: string;
   }
