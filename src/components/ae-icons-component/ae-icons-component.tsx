@@ -35,9 +35,9 @@ export class AeIconsComponent {
 
   iconClicked(evt) {
     console.log(evt.currentTarget);
-    console.log(this.arialabel)
-    //    let x = document.getElementById("container").className;
-    //    document.getElementById("containerPara").innerHTML = x;
+    console.log(this.arialabel);
+    let x = this.arialabel;
+    document.getElementById("containerPara").innerHTML = x;
   }
 
   render() {
