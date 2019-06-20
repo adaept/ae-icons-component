@@ -29,7 +29,7 @@ export class AeIconsComponent {
     //console.log('Component ae-icons-component is about to be rendered');
     //console.log('aesize=' + this.aesize + ' name=' + this.name + ' color=' + this.color)
     //console.log(this.el.shadowRoot);
-    console.log('aetype=' + this.aetype);
+    //console.log('aetype=' + this.aetype);
   }
 
   iconClicked(evt) {
