@@ -15,6 +15,10 @@ export class AeIconsComponent {
   @Prop() name: string;
   @Prop() color: string;
 
+  constructor() {
+    this.iconClicked = this.iconClicked.bind(this);
+  }
+
   /**
    * The component is about to load and has not rendered yet.
    * This is the best place to make any data updates
@@ -28,9 +32,13 @@ export class AeIconsComponent {
     console.log('aetype=' + this.aetype);
   }
 
+  iconClicked(evt) {
+    console.log(evt.currentTarget);
+  }
+
   render() {
     return (
-      <ion-icon class={this.aesize} name={this.name} color={this.color}></ion-icon>
+      <ion-icon class={this.aesize} name={this.name} color={this.color} onClick={this.iconClicked}></ion-icon>
     );
   }
 }
