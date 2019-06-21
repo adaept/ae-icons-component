@@ -50,6 +50,12 @@ export class AeIconsComponent {
           console.log(this.arialabel + " ae64");
           break;
         }
+        case "ae-refresh-circle": {
+          document.getElementById("containerPara").innerHTML = this.arialabel;
+          this.aesize = "ae96";
+          console.log(this.arialabel + " ae64");
+          break;
+        }
         default: {
           //statements;
           break;
