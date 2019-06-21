@@ -37,7 +37,24 @@ export class AeIconsComponent {
     console.log(evt.currentTarget);
     console.log(this.arialabel);
     if (this.arialabel) {
-      document.getElementById("containerPara").innerHTML = this.arialabel
+      switch (this.arialabel) {
+        case "ae-remove-circle": {
+          document.getElementById("containerPara").innerHTML = this.arialabel;
+          this.aesize = "ae16";
+          console.log(this.arialabel + " ae16");
+          break;
+        }
+        case "ae-add-circle": {
+          document.getElementById("containerPara").innerHTML = this.arialabel;
+          this.aesize = "ae64";
+          console.log(this.arialabel + " ae64");
+          break;
+        }
+        default: {
+          //statements;
+          break;
+        }
+      }
     } else {
       document.getElementById("containerPara").innerHTML = "<br>"
     }
