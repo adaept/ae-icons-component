@@ -56,7 +56,7 @@ export class AeIconsComponent {
         }
       }
     } else {
-      document.getElementById("containerPara").innerHTML = "<br>"
+      document.getElementById("containerPara").innerHTML = "<br>" + this.name
     }
   }
 
