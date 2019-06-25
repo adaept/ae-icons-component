@@ -1,6 +1,6 @@
 {
   "name": "ae-icons-component",
-  "version": "0.2.5",
+  "version": "0.3.0",
   "description": "adaept Icons Component",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
