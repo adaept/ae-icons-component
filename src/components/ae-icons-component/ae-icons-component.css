@@ -17,7 +17,6 @@ ion-icon {
   font-size: var(--ae-icon-size);
 }
 
-
 ion-icon.ae16 {
   color: var(--color);
   font-size: calc(var(--ae-icon-size) * 2);
@@ -131,8 +130,7 @@ ion-icon.ae1024 {
 ion-icon:hover {
   background-color: rebeccapurple;
   box-shadow: inset 0px 0px 0px 2px red;
-  /* width: 48px !important;
-  height: 48px !important; */
+  transform: scale(1.5);
 }
 
 /* ----------RGBY---------------- */
