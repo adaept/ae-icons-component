@@ -41,19 +41,19 @@ export class AeIconsComponent {
         case "ae-remove-circle": {
           document.getElementById("containerPara").innerHTML = this.arialabel;
           this.aesize = "ae16";
-          console.log(this.arialabel + " ae16");
+          console.log(this.arialabel + " ae16 " + this.aetype);
           break;
         }
         case "ae-add-circle": {
           document.getElementById("containerPara").innerHTML = this.arialabel;
-          this.aesize = "ae64";
-          console.log(this.arialabel + " ae64");
+          this.aesize = "ae48";
+          console.log(this.arialabel + " ae48 " + this.aetype);
           break;
         }
         case "ae-refresh-circle": {
           document.getElementById("containerPara").innerHTML = this.arialabel;
-          this.aesize = "ae96";
-          console.log(this.arialabel + " ae64");
+          this.aesize = "ae64";
+          console.log(this.arialabel + " ae64 " + this.aetype);
           break;
         }
         default: {
