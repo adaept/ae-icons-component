@@ -32,7 +32,7 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface AeIconsComponent extends JSXBase.HTMLAttributes<HTMLAeIconsComponentElement> {
+  interface AeIconsComponent {
     'aesize'?: string;
     'aetype'?: string;
     'arialabel'?: string;
@@ -50,7 +50,9 @@ export { LocalJSX as JSX };
 
 declare module "@stencil/core" {
   export namespace JSX {
-    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
+    interface IntrinsicElements {
+      'ae-icons-component': LocalJSX.AeIconsComponent & JSXBase.HTMLAttributes<HTMLAeIconsComponentElement>;
+    }
   }
 }
 
