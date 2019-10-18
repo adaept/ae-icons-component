@@ -1,6 +1,6 @@
 {
   "name": "ae-icons-component",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "adaept Icons Component",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -20,8 +20,8 @@
     "ionicons": "4.6.3"
   },
   "devDependencies": {
-    "@stencil/core": "1.7.1",
-    "@types/jest": "24.0.18",
+    "@stencil/core": "1.7.2",
+    "@types/jest": "24.0.19",
     "@types/puppeteer": "1.20.2",
     "jest": "24.9.0",
     "jest-cli": "24.9.0",
