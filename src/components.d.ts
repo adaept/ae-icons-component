@@ -23,7 +23,7 @@ declare global {
 
 
   interface HTMLAeIconsComponentElement extends Components.AeIconsComponent, HTMLStencilElement {}
-  const HTMLAeIconsComponentElement: {
+  var HTMLAeIconsComponentElement: {
     prototype: HTMLAeIconsComponentElement;
     new (): HTMLAeIconsComponentElement;
   };
