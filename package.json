@@ -1,11 +1,16 @@
 {
-  "name": "ae-icons-component",
-  "version": "0.9.8",
+  "name": "@adaept/ae-icons-component",
+  "version": "0.9.92",
+  "private": false,
   "description": "adaept Icons Component",
-  "module": "dist/index.mjs",
+  "homepage": "https://aeicons.adaept.com",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
   "files": [
     "dist/"
   ],
@@ -35,6 +40,5 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/adaept/ae-icons-component"
-  },
-  "homepage": "https://github.com/adaept/ae-icons-component"
+  }
 }
