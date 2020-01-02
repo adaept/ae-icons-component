@@ -25,7 +25,7 @@
     "ionicons": "4.6.3"
   },
   "devDependencies": {
-    "@stencil/core": "1.9.0-7",
+    "@stencil/core": "1.9.0-8",
     "@types/jest": "24.0.25",
     "@types/puppeteer": "2.0.0",
     "jest": "24.9.0",
