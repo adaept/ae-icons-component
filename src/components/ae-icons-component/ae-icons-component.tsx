@@ -3,8 +3,8 @@ import "ionicons";
 
 let maxsize: number = 128;
 let initsize: number = 40;
-let prevsizeplus: number = 8;
-let prevsizeminus: number = 8;
+//let prevsizeplus: number = 8;
+//let prevsizeminus: number = 8;
 let currsizeplus: number = 8;
 let currsizeminus: number = 8;
 
@@ -41,19 +41,19 @@ export class AeIconsComponent {
   }
 
   getIconSizeMinus() {
-    console.log('getIconSizeMinus prevsizeminus = ' + prevsizeminus);
-    console.log('getIconSizeMinus this.aesize = ' + this.aesize + ' ' + this.aesize.substr(2));
+    //console.log('getIconSizeMinus prevsizeminus = ' + prevsizeminus);
+    //console.log('getIconSizeMinus this.aesize = ' + this.aesize + ' ' + this.aesize.substr(2));
     currsizeminus = +this.aesize.substr(2) - 8;
     currsizeminus < 8 ? currsizeminus = initsize : currsizeminus;
-    console.log(currsizeminus);
+    //console.log(currsizeminus);
   }
 
   getIconSizePlus() {
-    console.log('getIconSizePlus prevsizeplus = ' + prevsizeplus);
-    console.log('getIconSizePlus this.aesize = ' + this.aesize + ' ' + this.aesize.substr(2));
+    //console.log('getIconSizePlus prevsizeplus = ' + prevsizeplus);
+    //console.log('getIconSizePlus this.aesize = ' + this.aesize + ' ' + this.aesize.substr(2));
     currsizeplus = +this.aesize.substr(2) + 8;
     currsizeplus > maxsize ? currsizeplus = 8 : currsizeplus;
-    console.log(currsizeplus);
+    //console.log(currsizeplus);
   }
 
   iconClicked(evt) {
