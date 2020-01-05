@@ -1,7 +1,8 @@
 import { Component, h, Element, Prop } from "@stencil/core";
 import "ionicons";
 
-let initsize: number = 32;
+let maxsize: number = 128;
+let initsize: number = 40;
 let prevsizeplus: number = 8;
 let prevsizeminus: number = 8;
 let currsizeplus: number = 8;
@@ -39,11 +40,19 @@ export class AeIconsComponent {
     //console.log('aetype=' + this.aetype);
   }
 
+  getIconSizeMinus() {
+    console.log('getIconSizeMinus prevsizeminus = ' + prevsizeminus);
+    console.log('getIconSizeMinus this.aesize = ' + this.aesize + ' ' + this.aesize.substr(2));
+    currsizeminus = +this.aesize.substr(2) - 8;
+    currsizeminus < 8 ? currsizeminus = initsize : currsizeminus;
+    console.log(currsizeminus);
+  }
+
   getIconSizePlus() {
     console.log('getIconSizePlus prevsizeplus = ' + prevsizeplus);
     console.log('getIconSizePlus this.aesize = ' + this.aesize + ' ' + this.aesize.substr(2));
     currsizeplus = +this.aesize.substr(2) + 8;
-    currsizeplus > 128 ? currsizeplus = 8 : currsizeplus;
+    currsizeplus > maxsize ? currsizeplus = 8 : currsizeplus;
     console.log(currsizeplus);
   }
 
@@ -53,15 +62,15 @@ export class AeIconsComponent {
     if (this.arialabel) {
       switch (this.arialabel) {
         case "ae-remove-circle": {
+          this.getIconSizeMinus();
           document.getElementById("containerPara").innerHTML = this.arialabel;
-          this.aesize = "ae16";
+          this.aesize = "ae" + currsizeminus
           //console.log('ae-remove-circle: ' + this.arialabel + " ae16 " + this.aetype);
           break;
         }
         case "ae-add-circle": {
           this.getIconSizePlus();
           document.getElementById("containerPara").innerHTML = this.arialabel;
-          //          this.aesize = "ae48";
           this.aesize = "ae" + currsizeplus
           //console.log('ae-add-circle: ' + this.arialabel + " ae48 " + this.aetype);
           break;
