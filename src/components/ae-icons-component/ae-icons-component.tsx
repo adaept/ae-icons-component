@@ -1,6 +1,12 @@
 import { Component, h, Element, Prop } from "@stencil/core";
 import "ionicons";
 
+let initsize: number = 32;
+let prevsizeplus: number = 8;
+let prevsizeminus: number = 8;
+let currsizeplus: number = 8;
+let currsizeminus: number = 8;
+
 @Component({
   tag: "ae-icons-component",
   styleUrl: "ae-icons-component.css",
@@ -33,27 +39,38 @@ export class AeIconsComponent {
     //console.log('aetype=' + this.aetype);
   }
 
+  getIconSizePlus() {
+    console.log('getIconSizePlus prevsizeplus = ' + prevsizeplus);
+    console.log('getIconSizePlus this.aesize = ' + this.aesize + ' ' + this.aesize.substr(2));
+    currsizeplus = +this.aesize.substr(2) + 8;
+    currsizeplus > 128 ? currsizeplus = 8 : currsizeplus;
+    console.log(currsizeplus);
+  }
+
   iconClicked(evt) {
-    console.log(evt.currentTarget);
-    console.log(this.arialabel);
+    console.log('iconClicked evt = ' + evt.currentTarget);
+    console.log('iconClicked this.arialabel = ' + this.arialabel);
     if (this.arialabel) {
       switch (this.arialabel) {
         case "ae-remove-circle": {
           document.getElementById("containerPara").innerHTML = this.arialabel;
           this.aesize = "ae16";
-          console.log(this.arialabel + " ae16 " + this.aetype);
+          //console.log('ae-remove-circle: ' + this.arialabel + " ae16 " + this.aetype);
           break;
         }
         case "ae-add-circle": {
+          this.getIconSizePlus();
           document.getElementById("containerPara").innerHTML = this.arialabel;
-          this.aesize = "ae48";
-          console.log(this.arialabel + " ae48 " + this.aetype);
+          //          this.aesize = "ae48";
+          this.aesize = "ae" + currsizeplus
+          //console.log('ae-add-circle: ' + this.arialabel + " ae48 " + this.aetype);
           break;
         }
         case "ae-refresh-circle": {
           document.getElementById("containerPara").innerHTML = this.arialabel;
-          this.aesize = "ae64";
-          console.log(this.arialabel + " ae64 " + this.aetype);
+          this.aesize = "ae" + initsize;
+          document.getElementById("ae-add-circle").innerHTML = this.aesize;
+          //console.log('ae-refresh-circle: ' + this.arialabel + " ae64 " + this.aetype);
           break;
         }
         default: {
