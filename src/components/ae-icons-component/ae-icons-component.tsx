@@ -40,6 +40,30 @@ export class AeIconsComponent {
     //console.log('aetype=' + this.aetype);
   }
 
+  getMyComputedStyle(cssVarName: string, propValue: string) {
+    if (propValue) {
+      document.documentElement.style.setProperty(cssVarName, propValue)
+      console.log('A. getMyComputedStyle ' + cssVarName + ' = ' + propValue)
+    }
+    console.log('B. getMyComputedStyle DONE');
+    return getComputedStyle(document.documentElement).getPropertyValue(cssVarName);
+  }
+
+  getElementStyleProps(myElement: string) {
+    // Ref: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+    let element = document.getElementById(myElement);
+    let out = "";
+    let elementStyle = element.style;
+    let computedStyle = window.getComputedStyle(element, null);
+
+    for (const prop in elementStyle) {
+      if (elementStyle.hasOwnProperty(prop)) {
+        out += "  " + prop + " = '" + elementStyle[prop] + "' > '" + computedStyle[prop] + "'\n";
+      }
+    }
+    console.log(out)
+  }
+
   getIconSizeMinus() {
     //console.log('getIconSizeMinus prevsizeminus = ' + prevsizeminus);
     //console.log('getIconSizeMinus this.aesize = ' + this.aesize + ' ' + this.aesize.substr(2));
@@ -63,23 +87,27 @@ export class AeIconsComponent {
       switch (this.arialabel) {
         case "ae-remove-circle": {
           this.getIconSizeMinus();
-          document.getElementById("containerPara").innerHTML = this.arialabel;
           this.aesize = "ae" + currsizeminus
-          //console.log('ae-remove-circle: ' + this.arialabel + " ae16 " + this.aetype);
+          //console.log('ae-remove-circle: ' + this.arialabel + ' ' + this.aesize + ' ' + this.aetype);
           break;
         }
         case "ae-add-circle": {
           this.getIconSizePlus();
-          document.getElementById("containerPara").innerHTML = this.arialabel;
           this.aesize = "ae" + currsizeplus
-          //console.log('ae-add-circle: ' + this.arialabel + " ae48 " + this.aetype);
+          //console.log('ae-add-circle: ' + this.arialabel + ' ' + this.aesize + ' ' + this.aetype);
           break;
         }
         case "ae-refresh-circle": {
-          document.getElementById("containerPara").innerHTML = this.arialabel;
+          /*
           this.aesize = "ae" + initsize;
-          document.getElementById("ae-add-circle").innerHTML = this.aesize;
-          //console.log('ae-refresh-circle: ' + this.arialabel + " ae64 " + this.aetype);
+
+          // list all element style properties
+          //  this.getElementStyleProps("3");
+          //  console.log('My Computed Style = ' + this.getMyComputedStyle('--color', 'orange'));
+          //
+
+          console.log('ae-refresh-circle: ' + this.arialabel + ' ' + this.aesize + ' ' + this.aetype);
+          */
           break;
         }
         default: {
