@@ -9,6 +9,8 @@
 
 * {
   --color: pink;
+  --ae-red: #ED2939 ;   /* Imperial Red  */
+  --ae-green: #009E60;   /* Shamrock Green  */
   --ae-icon-size: 8px;
 }
 
@@ -131,6 +133,32 @@ ion-icon:hover {
   background-color: rebeccapurple;
   box-shadow: inset 0px 0px 0px 2px red;
   transform: scale(1.5);
+}
+
+/* --adaept custom colors/names-- */
+
+.ion-color-aered {
+  --ion-color-base: #ED2939;
+  --ion-color-rgb: 237, 41, 57;
+  --ion-color-contrast: #ffffff;
+  --ion-color-contrast-rgb: 255, 255, 255;
+  --ion-color-shade: #d12432;
+  --ion-color-tint: #ef3e4d;
+}
+/*
+ion-icon.ae40red {
+  color: var(--ae-red);
+  font-size: calc(var(--ae-icon-size) * 5);
+}
+*/
+
+.ion-color-aegreen {
+  --ion-color-base: #009E60;
+  --ion-color-rgb: 0, 158, 96;
+  --ion-color-contrast: #ffffff;
+  --ion-color-contrast-rgb: 255, 255, 255;
+  --ion-color-shade: #008b54;
+  --ion-color-tint: #1aa870;
 }
 
 /* ----------RGBY---------------- */
