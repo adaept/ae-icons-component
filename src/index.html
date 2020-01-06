@@ -32,18 +32,29 @@
       <div>4.6.3/1.9.0-9/0.9.99</div>
     </ion-row>
     <!-- container is css grid and is using ion-icon with ionic theme -->
-    <div class="container" style="  padding: 8px 0; display: inline-block;">
+    <div class="container" style="padding: 8px 0; display: inline-block;">
       <ion-row>
-        <ae-icons-component aetype="round" aesize="ae40" name="remove-circle" color="danger"
+        <ae-icons-component id="1" aetype="round" aesize="ae40" name="remove-circle" color="danger"
           arialabel="ae-remove-circle">
         </ae-icons-component>
         <span style="font-size:24px"><b>SIZE</b></span>
-        <ae-icons-component aetype="round" aesize="ae40" name="add-circle" color="success" arialabel="ae-add-circle">
+        <ae-icons-component id="2" aetype="round" aesize="ae40" name="add-circle" color="success"
+          arialabel="ae-add-circle">
         </ae-icons-component>
         <span style="font-size:24px"><b>RESET</b></span>
-        <ae-icons-component aetype="round" aesize="ae40" name="refresh-circle" color="tertiary"
+        <ion-button>
+          <ion-icon slot="start" name="refresh-circle" shape="round" size="large" color="danger"></ion-icon>
+        </ion-button>
+        <ion-button>
+          <ion-icon slot="start" name="globe" shape="round" size="large" color="success"></ion-icon>
+        </ion-button>
+        <!--
+        <ae-icons-component id="3" aetype="round" aesize="ae40" name="refresh-circle" color="aered"
           arialabel="ae-refresh-circle">
         </ae-icons-component>
+        <ae-icons-component id="4" aetype="round" aesize="ae40" name="globe" color="aegreen" arialabel="ae-globe">
+        </ae-icons-component>
+        -->
       </ion-row>
     </div>
     <p id="containerPara"><br></p>
