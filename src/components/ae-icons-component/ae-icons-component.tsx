@@ -40,6 +40,10 @@ export class AeIconsComponent {
     //console.log('aetype=' + this.aetype);
   }
 
+  resetMinusPlusSize() {
+    console.log('resetMinusPlusSize');
+  }
+
   getMyComputedStyle(cssVarName: string, propValue: string) {
     if (propValue) {
       document.documentElement.style.setProperty(cssVarName, propValue)
