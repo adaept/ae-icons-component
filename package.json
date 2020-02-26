@@ -22,7 +22,7 @@
     "test.watch": "stencil test --spec --e2e --watchAll"
   },
   "dependencies": {
-    "ionicons": "4.6.3"
+    "ionicons": "5.0.0"
   },
   "devDependencies": {
     "@stencil/core": "1.8.10",
