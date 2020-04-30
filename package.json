@@ -28,7 +28,7 @@
     "@stencil/core": "1.10.1",
     "@types/jest": "25.1.4",
     "@types/puppeteer": "2.0.1",
-    "jest": "25.1.0",
+    "jest": "25.5.2",
     "jest-cli": "25.1.0",
     "puppeteer": "2.1.1"
   },
