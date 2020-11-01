@@ -1,36 +1,38 @@
 {
   "name": "@adaept/ae-icons-component",
-  "version": "0.9.997",
+  "version": "1.0.0",
   "private": false,
   "description": "adaept Icons Component",
   "homepage": "https://aeicons.adaept.com",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
   "es2015": "dist/esm/index.mjs",
   "es2017": "dist/esm/index.mjs",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.js",
   "files": [
-    "dist/"
+    "dist/",
+    "loader/"
   ],
   "scripts": {
-    "build": "stencil build",
-    "now-build": "stencil build",
+    "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll"
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
   },
   "dependencies": {
     "ionicons": "4.6.3"
   },
   "devDependencies": {
-    "@stencil/core": "1.10.0",
-    "@types/jest": "25.1.4",
-    "@types/puppeteer": "2.0.1",
-    "jest": "25.1.0",
-    "jest-cli": "25.1.0",
-    "puppeteer": "2.1.1"
+    "@stencil/core": "2.2.0",
+    "@types/jest": "^26.0.12",
+    "@types/puppeteer": "^3.0.1",
+    "jest": "26.4.2",
+    "jest-cli": "26.4.2",
+    "puppeteer": "5.3.1"
   },
   "repository": {
     "type": "git",
