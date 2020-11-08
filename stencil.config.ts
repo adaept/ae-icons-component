@@ -4,11 +4,18 @@ export const config: Config = {
   namespace: "aeiconscomponent",
   outputTargets: [
     {
-      type: "dist"
+      type: "dist",
+      esmLoaderPath: '../loader',
+    },
+    {
+      type: 'dist-custom-elements-bundle',
+    },
+    {
+      type: 'docs-readme',
     },
     {
       type: "www",
-      serviceWorker: null
+      serviceWorker: null, // disable service workers
     }
   ]
 };
