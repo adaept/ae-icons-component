@@ -1,5 +1,6 @@
 dist/
 www/
+loader/
 .firebase/hosting.d3d3.cache
 
 *~
