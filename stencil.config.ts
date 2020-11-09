@@ -1,10 +1,10 @@
-import { Config } from "@stencil/core";
+import { Config } from '@stencil/core';
 
 export const config: Config = {
-  namespace: "aeiconscomponent",
+  namespace: 'ae-icons-component',
   outputTargets: [
     {
-      type: "dist",
+      type: 'dist',
       esmLoaderPath: '../loader',
     },
     {
@@ -14,8 +14,8 @@ export const config: Config = {
       type: 'docs-readme',
     },
     {
-      type: "www",
+      type: 'www',
       serviceWorker: null, // disable service workers
-    }
-  ]
+    },
+  ],
 };

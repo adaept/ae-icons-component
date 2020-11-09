@@ -1,6 +1,6 @@
 {
   "name": "@adaept/ae-icons-component",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "private": false,
   "description": "adaept Icons Component",
   "homepage": "https://aeicons.adaept.com",
@@ -11,7 +11,7 @@
   "types": "dist/custom-elements/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
-  "unpkg": "dist/stencil-starter-project-name/stencil-starter-project-name.js",
+  "unpkg": "dist/ae-icons-component/ae-icons-component.js",
   "files": [
     "dist/",
     "loader/"
@@ -24,15 +24,15 @@
     "generate": "stencil generate"
   },
   "dependencies": {
+    "@stencil/core": "2.3.0",
     "ionicons": "4.6.3"
   },
   "devDependencies": {
-    "@stencil/core": "2.3.0",
     "@types/jest": "^26.0.15",
     "@types/puppeteer": "^5.4.0",
-    "jest": "26.6.3",
-    "jest-cli": "26.6.3",
-    "puppeteer": "5.4.1"
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "puppeteer": "^5.4.1"
   },
   "repository": {
     "type": "git",
