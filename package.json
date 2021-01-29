@@ -24,7 +24,7 @@
     "generate": "stencil generate"
   },
   "dependencies": {
-    "@stencil/core": "2.3.0",
+    "@stencil/core": "2.4.0",
     "ionicons": "4.6.3"
   },
   "devDependencies": {
